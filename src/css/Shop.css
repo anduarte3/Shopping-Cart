@@ -1,0 +1,8 @@
+.shop-page {
+    margin-top: 50px;
+}
+.shop-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,23 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: gray;
+  margin: auto;
+}
+.nav-bar {
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+.nav-link {
+  margin-right: 50px;
+}
+.nav-link:focus,
+.nav-link:active,
+.nav-link:hover {
+  /* Add styles to remove pressed or active styles */
+  /* For example, you can remove background color or any other styles */
+  background-color: transparent;
+  /* Add any additional styles you want */
+}
