@@ -1,0 +1,47 @@
+.paintings {
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    height: 500px;
+    width: 250px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.align-painting {
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.title-name {
+    text-align: center;
+}
+.price-tag {
+    text-align: right;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icon {
+    height: 18px;
+    width: 18px;
+    margin: 1px;
+}
+button {
+    height: 40px;
+    width: 40px;
+}
+input {
+    font-size: 18px;
+    width: 18px;
+    text-align: center;
+}
+.btn-add {
+
+}
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

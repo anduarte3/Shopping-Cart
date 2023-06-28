@@ -1,12 +1,41 @@
-.homepage {
-    margin-top: 50px;
+.homepage-container {
+    margin-top: 100px;
+    background-image: url('../img/home-bg.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: 300px;
 }
 .shop-link {
     display: flex;
     justify-content: flex-end;
+    text-decoration: none;
+    margin-top: 15px;
+}
+.shop-now {
+    color: white;
+    text-decoration: none;
+    background-color: #23395d;
+    border-radius: 15px;
+    height: 60px;
+    width: 180px;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.shop-now:hover {
+    opacity: 0.8;
 }

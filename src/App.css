@@ -1,23 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Roboto+Mono:wght@100&display=swap');
+
 body {
   font-family: 'Roboto Mono', monospace;
   background-color: gray;
   margin: auto;
+  font-weight: bold;
+  height: 100%;
+  padding: 0;
+}
+.cart-icon {
+  height: 20px;
+  width: 20px;
 }
 .nav-bar {
-  background-color: bisque;
+  position: relative;
+  background-color: #23395d;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 20px;
+  padding: 25px;
+  height: 50px;
 }
 .nav-link {
+  margin-top: 10px;
   margin-right: 50px;
+  text-decoration: none;
+  color: white;
 }
-.nav-link:focus,
-.nav-link:active,
-.nav-link:hover {
-  /* Add styles to remove pressed or active styles */
-  /* For example, you can remove background color or any other styles */
-  background-color: transparent;
-  /* Add any additional styles you want */
-}
+/* .display-count {
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  width: 15px;
+  border-radius: 100px;
+  font-size: 14px;
+  position: absolute;
+  top: 1%;
+  right: 46.5%;
+} */

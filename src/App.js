@@ -1,24 +1,29 @@
-import React from 'react';
+import { useState } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import Homepage from './components/Homepage';
 import Shop from './components/Shop';
 import Checkout from './components/Checkout'
+import cart from './img/cart.png'
 import './App.css';
 
 function App() {
+  const [cartItems, setCartItems] = useState([]);
+
   return (
-    <>
+    <div className='main-page'>
       <nav className='nav-bar'>
         <Link to='/' className='nav-link'>Home</Link>
         <Link to='/shop' className='nav-link'>Shop</Link>
-        <Link to='/checkout' className='nav-link'>Checkout</Link>
+        <Link to='/checkout' className='nav-link'>
+          <img src={cart} className='cart-icon'/>
+        </Link>
       </nav>
       <Routes>
         <Route path='/' element={<Homepage/>} />
-        <Route path='/shop' element={<Shop/>} />
-        <Route path='/checkout' element={<Checkout/>} />
+        <Route path='/shop' element={<Shop cartItems={cartItems} setCartItems={setCartItems} />} />
+        <Route path='/checkout' element={<Checkout cartItems={cartItems} />} />
       </Routes>
-    </>
+    </div>
   )
 }
 
