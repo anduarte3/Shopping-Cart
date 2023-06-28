@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes, Navigate } from 'react-router-dom';
 import Homepage from './components/Homepage';
 import Shop from './components/Shop';
 import Checkout from './components/Checkout'
@@ -22,6 +22,7 @@ function App() {
         <Route path='/' element={<Homepage/>} />
         <Route path='/shop' element={<Shop cartItems={cartItems} setCartItems={setCartItems} />} />
         <Route path='/checkout' element={<Checkout cartItems={cartItems} />} />
+        <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
     </div>
   )
